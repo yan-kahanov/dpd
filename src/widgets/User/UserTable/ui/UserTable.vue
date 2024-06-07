@@ -49,7 +49,7 @@ const fetchUsers = async () => {
     const { items, totalPages: total } = await getUsers({
         page: page.value,
         search: search.value,
-        perPage: 5
+        perPage: 20
     })
 
     users.value = items
